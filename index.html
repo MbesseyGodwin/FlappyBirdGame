@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-400">
+
+    <div class="container bg-light p-2 pb-0 mt-1 rounded d-flex justify-content-around ">
+
+        <header class="alert alert-info">
+            <h6 class="">Floppy Bird</h6>
+            <div class="d-flex justify-content-start p-0 m-0">
+                <div id="bestScore" class=" text-darktext-lg mr-1"></div>
+                <div id="currentScore" class=" text-darktext-lg mx-1"></div>
+            </div>
+        </header>
+
+
+        <div class="alert alert-info">
+            <h6 class="">Game Instructions</h6>
+            <p class="p-0 m-0 text-dark">press any key or click to make the bird jump.</p>
+            <p class="p-0 m-0 text-dark">Avoid hitting the pipes.</p>
+        </div>
+
+
+        <div class="alert alert-info">
+            <label for="difficulty" class="h6">Select Difficulty:</label>
+            <select id="difficulty" class="form-control text-center border rounded">
+                <option value="simple">Simple</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <canvas id="canvas" class="border-2 border-gray-600 mt-4" width="431" height="768"></canvas>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
